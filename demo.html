@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="ashik.css">
+  <style>
+  
+  * {
+    padding: 0;
+    margin: 0;
+}
+.fixed-with {
+    width: 1000px;
+    margin: auto;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+img {
+    max-width: 20%;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+
+}
+.header-left img{
+    width: 100px;
+}
+.header {
+    background-color: #21e9d9 ;
+
+}
+.header-left {
+    float: left;
+    width: 30%;
+
+
+}
+.header-right {
+    float: right;
+    width: 70%;
+
+}
+.header-right ul{
+    text-align: right;
+}
+.header-right ul li{
+    display: inline-block;
+    margin-left: -4px;
+
+}
+.header-right ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 60px;
+    border-right: 1px solid white;
+    transition:  .4s;
+  }
+  .header-right ul li:hover >a {
+    background-color:  #2ee908;
+  }
+ 
+  
+  /* Dropdown items */
+  
+  .header-right ul li {
+    position: relative;
+
+  }
+  .header-right ul li ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    background-color: #2081e5;
+  }
+  .header-right ul li ul {
+    position: absolute;
+    left: -1px;
+    top: 60px;
+    width: 123px;
+    background-color: #2081e5;
+    border-top: 1px solid #fff;
+  }
+  .header-right ul li ul li{
+    display: block;
+  }
+
+  .header-right ul li ul li a {
+    display: block;
+    border: none;
+    border-bottom:1px solid rgb(250, 203, 203);
+
+  }
+  .header-right ul ul li:first-child a {
+    border-left: none;
+  
+  }
+  
+  .header-right ul li ul li a:hover {}
+  
+  
+  
+  
+  /*dropdown hover */
+
+.header-right ul li ul {
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+}
+.header-right ul li:hover ul{
+  opacity: 1;
+  visibility: visible;
+  transition: .8s;
+}
+  .header-right ul li ul li a:hover {}
+  
+  
+
+
+  /* Banner */
+  .banner {
+    background:url(./assets/img/banner.jpg) no-repeat center;
+    background-size: cover;
+    padding: 200px 0;
+
+  }
+  .banner-caption{
+
+  }
+  .banner-caption h2 {
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 29px;
+    border-radius: 20px;
+  }
+  .banner-caption h1 {
+    background: rgba(78, 188, 142, 0.9);
+    color: white;
+    max-width: 650px;
+    font-size: 40px;
+    margin: auto;
+      margin-top: auto;
+    border-radius: 14px;
+    margin-top: 20px;
+    padding: 10px 20px;
+  }
+  
+  
+  
+  /* service section */
+  .service{
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+
+.service-item {
+  float: left;
+  width: 31.3%;
+  border: 1px solid rgb(174, 19, 212);
+  padding: 25px 10px;
+  box-sizing: border-box;
+  margin-left: 1%;
+  margin-right: 1%;
+
+  }
+  .service-item span {
+    display: block;
+    height: 60px;
+    width: 60px;
+    background: #3874ee;
+    color: white;
+    margin: auto;
+    font-size: 45px;
+    line-height: 60px;
+    border-radius: 20px 0 20px 0;
+  }
+  .service-item h3{
+    margin: 20px 0;
+    font-size: 30px;
+  }
+
+  
+  
+  
+  /* About us */
+  .about {
+    margin-top: 60px;
+  }
+  .about h2{
+    font-size: 38px;
+    margin-bottom: 16px;
+  }
+
+  .about p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 17px;
+  }
+  
+  
+  
+  /* footer */
+  .footer{
+    background: #0d1a18;
+    color: white;
+  }
+  .footer-left{
+    float: left;
+    width: 40%;
+  }
+  .footer-right{
+    float: right;
+    width: 60%;
+  }
+  
+  </style>
+<body>
+    <div class="header clearfix">
+        <div class="fixed-with">
+            <div class="header-left">
+                <a href="#">
+                    <img src="./assets/img/legal air.svg.png" alt="">
+                </a>
+
+        </div>
+    
+    <div class="header-right">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us </a>
+               <ul>
+                <li><a href="https://www.army.mil.bd">Army</a>
+                </li>
+                <li><a href="https://www.navy.mil.bd">Navy</a></li>
+                <li><a href="baf.mil.bd">Air Force</a></li>
+                <li><a href="http://www.bgb.gov.bd">BGB</a></li>
+               </ul>
+                
+            </li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Others</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    </div>
+    </div>
+    <div class="banner">
+        <div class="fixed-with">
+            <div class="banner-caption text-center">
+                <h2>Welcome to our Air Force Website</h2>
+                <h1>Developed by LAC Ashik</h1>
+            </div> </div>
+    </div>
+    <div class="about text-center">
+        <div class="fixed-with">
+            <h2>About Us </h2>
+            <p>
+
+                Prophet Muhammad peace be upon him is the 
+                last messenger of God. He is the best of creation, he is a role 
+                model on how to be of exemplary character, kindness, compassion,
+                 mercy, gratitude,  
+                thankfulness, abundance, courage, fearlessness, self-reflection</p>
+        </div>
+    </div>
+        <div class="service clearfix text-center">
+            <div class="fixed-with">
+                <div class="service-item">
+                    <span><i class="far fa-lightbulb"></i></span>
+                    <h3>Web Design</h3>
+                    <P>The Qurān yields little concrete biographical
+                         information about the Islamic Prophet.  </P>
+                </div>
+                <div class="service-item">
+                    <span><i class="far fa-lightbulb"></i></span>
+                    <h3>Graphic Design</h3>
+                    <P>The Qurān yields little concrete biographical
+                         information about the Islamic Prophet.  </P>
+                </div>
+                <div class="service-item">
+                    <span><i class="far fa-lightbulb"></i></span>
+                    <h3>Digital Marketing </h3>
+                    <P>The Qurān yields little concrete biographical
+                         information about the Islamic Prophet.  </P>
+                </div>
+            </div>
+        </div>
+        <div class="block-container clearfix">
+            <div class="fix-with">
+                <div class="blog-left-content"></div>
+                <div class="blog-left-notification"></div>
+
+            </div>
+        </div>
+        <div class="footer clearfix">
+            <div class="fixed-with">
+                <div class="footer-left">
+                    <p>&copy;All Right Reserved By Developer Ashik Billah </p>
+                </div>
+            </div>
+        </div>
+        
+</body>
+</html>
+
+- 👋 Hi, I’m @Airman212
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate sz+on ...
+- 📫 How to reach me ...
+  
+<!---
+Airman212/Airman212 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
